@@ -1,0 +1,112 @@
+:root {
+    --warna-ungu-brand: #732091;
+    --warna-hitam-normal: #14042C;
+    --warna-hijau-samping: #047045;
+    --warna-abu-khusus: #4C4C4C;
+}
+  
+h1{
+    font-size: 76px !important;
+    font-weight: 700;
+    font-family: "Satoshi-Bold"
+}
+
+.greet {
+    font-size: 30px;
+    font-family: "Inter";
+    font-weight: 700;
+}
+
+
+.main-kiri{
+    background-color: var(--warna-hijau-samping);
+
+}
+
+
+.auth-card{
+    width: 65%;
+    font-family: "Inter", sans-serif;
+}
+
+.btn-full{
+    width: 100%;
+    background-color: var(--warna-hijau-samping);
+    color: white;
+    border: none;
+    height:40px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-full:hover {
+    background-color: transparent;
+    color: var(--warna-hijau-samping);
+    border: 2px solid var(--warna-hijau-samping); 
+}
+
+.auth-button-card{
+    width: 100%;
+    font-family: 'Inter';
+}
+
+.btn-quarter-solid{
+    width: 30% !important;
+    background-color: transparent;
+    color: var(--warna-hijau-samping);
+    border: 2px solid var(--warna-hijau-samping);
+    height:40px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-quarter-outline{
+    width: 30%;
+    background-color: var(--warna-hijau-samping);
+    color: white;
+    border: none;
+    height:40px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-quarter-solid:hover {
+    background-color: var(--warna-hijau-samping);
+    color: white;
+    
+}
+
+.btn-quarter-outline:hover {
+    background-color: transparent;
+    color: var(--warna-hijau-samping);
+    border: 2px solid var(--warna-hijau-samping);
+}
+
+.auth-option-card{
+    color: var(--warna-abu-khusus);
+    font-size: 12px;
+}
+
+span{
+    color: var(--warna-hijau-samping);
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.form-check-input:hover {
+    border: 2px solid var(--warna-hijau-samping); 
+}
+
+.register-input {
+    width: 50%;
+}
+
+.register-label {
+    font-size: 15px;
+    font-family: 'Inter';
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tarikan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/manajmen_tarik_setor.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="nav container-fluid d-flex justify-content-center align-items-center shadow-sm">
+        <div class="container row mt-4 mb-4">
+            <div class="logo col-4">
+                <img src="../assets/img/NikiSAM logo.svg">
+            </div>
+            <div class="menu col-6 mt-2">
+                <ul class="row">
+                    <li class="col-2 pe-0">
+                        <a class="nav-menu" href="../main/admin_dashboard.html">Home</a>
+                    </li>
+                    <li class="col-2">
+                        <a class="nav-menu" href="../profile/profil_admin.html">Profile</a>
+                    </li>
+                    <li class="col-3">
+                        <a class="nav-menu" href="../../nasabah/jenissampah/jenis_sampah.html">Jenis Sampah</a>
+                    </li>
+                    <li class="col-2">
+                        <a class="nav-menu" href="../../nasabah/landing page/landing_page.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-sign col-2 justify-content-center align-items-start d-flex gap-3 ">
+                <div class="d-flex justify-content-center align-items-center  gap-3">
+                    <div class="small-photo">
+                        <img src="../assets/img/LUCKIEST.png" alt="" srcset="">
+                    </div>
+                    <a href="../profile/profil_admin.html" style="color: black" class=""><b>Kasi Nama</b></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--NAVBAR END-->
+
+    <!--MANAJEMEN SETOR-->
+    <div class="tarik pt-5 justify-content-center pb-5">
+        <h2 class="head-tarik-setor text-center pb-5">Manajemen Setoran Nasabah</h2>
+        <!--SEARCH-->
+        <div class="d-flex justify-content-center" role="search">
+            <i class="fa-solid fa-magnifying-glass post mt-3"></i>
+            <input class="search-nasabah d-flex" type="search" placeholder="Cari nama atau ID nasabah">
+        </div>
+
+        <!--FORM-->
+        <div class="formulir bawah container-fluid row d-flex justify-content-center gap-3 mt-5">
+            <div class="col-7 formulir-kiri d-flex justify-content-around pt-5">
+                <div class="formulir-dalam">
+                    <form>
+                        <div class="mb-3 row table-head">
+                            <p class="name col-5">Nama Lengkap Nasabah</p>
+                            <p class="id-nas col-3">ID Nasabah</p>
+                            <p class="tgl-gabung col-4">Tanggal Bergabung</p>
+                        </div>
+                        <div class="mb-3 row">
+                            <p class="name-text col-5">Budi Santoso</p>
+                            <p class="id-nas-text col-3">NAS0001</p>
+                            <p class="tgl-gabung-text col-4">XX/XX/XXXX</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Select" class="form-label tarikan-text">Jenis Sampah</label>
+                            <select id="Select" class="form-select">
+                                <option value="plastik">Plastik</option>
+                                <option value="kertas">Kertas</option>
+                                <option value="logam">Logam</option>
+                                <option value="kaca">Kaca</option>
+                                <option value="karet">Karet</option>
+                                <option value="tekstil">Tekstil</option>
+                                <option value="elektronik">Elektronik</option>
+                                <option value="baterai">Baterai</option>
+                                <option value="minyak_goreng_bekas">Minyak goreng bekas</option>
+                                <option value="lampu_neon_bekas">Lampu neon bekas</option>
+                                <option value="ban_bekas">Ban bekas</option>
+                                <option value="kaleng_bekas">Kaleng bekas</option>
+                                <option value="botol_plastik_bekas">Botol plastik bekas</option>
+                                <option value="karton_bekas">Karton bekas</option>
+                                <option value="kertas_bekas">Kertas bekas</option>
+                                <option value="majalah_bekas">Majalah bekas</option>
+                                <option value="koran_bekas">Koran bekas</option>
+                                <option value="buku_bekas">Buku bekas</option>
+                                <option value="daun_kering">Daun kering</option>
+                                <option value="ranting_pohon">Ranting pohon</option>
+                                <option value="sampah_organik">Sampah organik</option>
+                                <option value="sampah_sisa_makanan">Sampah sisa makanan</option>
+                                <option value="sampah_medis">Sampah medis</option>
+                                <option value="sampah_b3">Sampah B3</option>
+                                <option value="sampah_elektronik">Sampah elektronik</option>
+                                <option value="sampah_konstruksi">Sampah konstruksi</option>
+                                <option value="sampah_tekstil">Sampah tekstil</option>
+                                <option value="sampah_karet">Sampah karet</option>
+                                <option value="sampah_kaca">Sampah kaca</option>
+                                <option value="sampah_logam">Sampah logam</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputJenis1" class="form-label">Berat Sampah (Dalam kg)</label>
+                            <div class="col-3 gap-3 d-flex align-items-center justify-content-around">
+                                <input type="number" class="form-control" id="berat" aria-describedby="beratSampah"
+                                    min="0">
+                                <h6>kg</h6>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-4 formulir-kanan ">
+                <h3 class="px-3 pt-5 pb-3 head-rekap">Rekapitulasi Setoran</h3>
+                <div class="harga-sampah d-flex justify-content-between px-3">
+                    <p><span>Saldo Awal</span></p>
+                    <p>Rp150.000</p>
+                </div>
+
+                <div class="harga-sampah d-flex justify-content-between px-3">
+                    <p><span>Setoran</span></p>
+                    <p>Rp50.000</p>
+                </div>
+
+                <div class="harga-sampah d-flex justify-content-between px-3">
+                    <p><span>Tanggal Setoran</span></p>
+                    <p>18/05/2024</p>
+                </div>
+
+                <div class="thin-separator mx-4"></div>
+
+                <div class="total-harga d-flex justify-content-between">
+                    <p class="ps-3 py-4 total-kiri">Saldo Akhir</p>
+                    <p class="pe-3 py-4 total-harga-sampah" style="text-align: right;">Rp200000</p>
+                </div>
+
+                <a href="pilih_jadwal.html"><button type="submit" class="button-green mx-5">Simpan dan Konfirmasi
+                        Data</button></a>
+            </div>
+        </div>
+        <!-- FORM-END -->
+    </div>
+    <!--MANAJEMEN SETOR END-->
+
+    <!--FOOTER-->
+    <div class="footer row d-flex justify-content-center pt-5 shadow-sm">
+        <!--FOOTER LOGO-->
+        <div class="col-2">
+            <img src="../assets/img/NikiSAM logo.svg">
+        </div>
+        <!--FOOTER LIST-->
+        <div class="col-2">
+            <ul>
+                <li class="foot-bold pb-2">NikiSAM</li>
+                <li class="foot-list pb-1">Visi</li>
+                <li class="foot-list pb-1">Misi</li>
+                <li class="foot-list pb-1">About Us</li>
+                <li class="foot-list">FAQs</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li class="foot-bold pb-2">Informasi</li>
+                <li class="foot-list pb-1">Kontak Kami</li>
+                <li class="foot-list pb-1">Bantuan</li>
+                <li class="foot-list pb-1">Syarat & Ketentuan</li>
+                <li class="foot-list pb-1">Kebijakan Privasi</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li class="foot-bold pb-2">Media Sosial</li>
+                <li class="foot-list pb-1">Tiktok</li>
+                <li class="foot-list pb-1">Instagram</li>
+                <li class="foot-list pb-1">Youtube</li>
+                <li class="foot-list pb-1">Twitter</li>
+            </ul>
+        </div>
+
+        <!--LINE-->
+        <div class="line border col-10 mt-5"></div>
+
+        <!--COPYRIGHT-->
+        <div class="copyright d-flex justify-content-center mt-3">
+            <p class="text-copyright">Copyright ©NikiSAM 2024 - All Rights Reserved.</p>
+        </div>
+    </div>
+    <!--FOOTER END-->
+</body>
+
+</html>
