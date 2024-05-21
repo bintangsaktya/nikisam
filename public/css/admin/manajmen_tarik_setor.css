@@ -1,0 +1,241 @@
+:root {
+    --warna-ungu-brand: #732091;
+    --warna-hitam-normal: #14042c;
+    --warna-hijau-samping: #047045;
+    --warna-abu-khusus: #4c4c4c;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/*NAVBAR*/
+li {
+    list-style: none;
+    font-family: "Inter";
+    color: black;
+}
+
+.nav-menu {
+    font-family: "Inter";
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-quarter-solid {
+    width: 45%;
+    background-color: transparent;
+    color: var(--warna-hijau-samping);
+    border: 1px solid var(--warna-hijau-samping);
+    height: 35px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+.btn-quarter-outline {
+    width: 45%;
+    background-color: var(--warna-hijau-samping);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+.btn-quarter-solid:hover {
+    background-color: var(--warna-hijau-samping);
+    color: white;
+}
+
+.btn-quarter-outline:hover {
+    background-color: transparent;
+    color: var(--warna-hijau-samping);
+    border: 2px solid var(--warna-hijau-samping);
+}
+
+.nav-menu:hover {
+    color: #047045;
+}
+
+/*PROFILE*/
+.small-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.small-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.profile-name {
+    text-decoration: none;
+}
+
+/*TARIKAN*/
+
+.tarik {
+    background-color: #f5f5f5;
+    font-family: "Inter";
+    min-height: 500px;
+}
+
+.head-tarik-setor {
+    font-weight: bold;
+}
+
+.search-nasabah {
+    height: 50px;
+    width: 45%;
+    border: solid rgba(102, 102, 102, 0.2);
+    border-width: 1px;
+    border-radius: 20px;
+    padding-left: 60px;
+    color: #aeaeae;
+}
+
+.search {
+    background-color: white;
+}
+
+.search {
+    border-radius: 20px;
+}
+
+.search-input {
+    all: unset;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+::placeholder {
+    color: #aeaeae;
+}
+
+.post {
+    position: absolute;
+    margin-right: 550px;
+    color: #c2bbbb;
+}
+
+/* FORMULIR */
+
+.formulir-kiri {
+    border: 1px solid #c6c6c6;
+    border-radius: 15px;
+    height: 400px;
+    background-color: white;
+}
+
+.formulir-kanan {
+    border: 1px solid #c6c6c6;
+    border-radius: 15px;
+    height: 400px;
+    background-color: white;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.formulir-dalam {
+    width: 85%;
+}
+
+.table-head {
+    font-weight: bold;
+}
+
+.tarikan-text {
+    font-weight: bold;
+}
+
+span {
+    color: #666666;
+    text-align: left;
+}
+
+.harga-sampah p {
+    text-align: right;
+}
+
+.thin-separator {
+    height: 2px;
+    width: 385px;
+    background-color: #c6c6c6;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.total-kiri {
+    font-weight: bold;
+}
+
+.total-harga-sampah {
+    text-align: right !important;
+    padding-bottom: 0px;
+}
+
+.total-harga p {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.button-green {
+    width: 350px;
+    border: unset;
+    background-color: #0b96ca;
+    transition: background-color 0.3s, color 0.3s;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-green:hover {
+    background-color: #1faadd;
+}
+
+.gambar-tunggu {
+    width: 400px !important;
+}
+
+.head-rekap {
+    font-weight: bold;
+}
+
+/*FOOTER*/
+.foot-bold {
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+.foot-list {
+    font-family: "Inter";
+    color: #666666;
+    font-weight: bold;
+}
+
+.text-copyright {
+    font-family: "Inter";
+    font-weight: bold;
+    color: #666666;
+    font-size: 12px;
+}
