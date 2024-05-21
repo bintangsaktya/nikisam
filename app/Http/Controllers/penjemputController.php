@@ -9,11 +9,6 @@ use Illuminate\Http\Request;
 class penjemputController extends Controller
 {
 
-    // public function __construct()
-    // {
-    //     $this->middleware('auth.role:penjemput');
-    // }
-
     public function profil($id)
     {
         $penjemput = Penjemput::all();

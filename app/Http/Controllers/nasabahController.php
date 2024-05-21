@@ -5,17 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Nasabah;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class nasabahController extends Controller
 {
-    // public function __construct()
-    // {
-    //     $this->middleware('auth.role:nasabah');
-    // }
 
     public function profil($id)
     {
-        $nasabah = Nasabah::all();
+        $nasabah = DB::table('nasabah')
+            ->join('users', 'nasabah.id', '=', 'users.id')
+            ->select('nasabah.*', 'users.*')
+            ->where('nasabah.id_nasabah', $id)
+            ->first();
         return view('nasabah.profil_nasabah', ["nasabah" => $nasabah]);
     }
 

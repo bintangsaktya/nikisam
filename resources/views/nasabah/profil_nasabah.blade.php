@@ -64,8 +64,8 @@
                             </div>
 
                             <div class="col-4 mt-3">
-                                <p class="name mb-0">tiara permata</p>
-                                <p class="post-info">$tanggalBergabung</p>
+                                <p class="name mb-0">{{$nasabah->nama_lengkap}}</p>
+                                <p class="post-info">{{$nasabah->tanggal_bergabung}}</p>
                             </div>
 
                             <div class="col-3"></div>
@@ -79,41 +79,29 @@
                         <form class="mt-3">
                             <div class="mb-1">
                                 <label for="exampleInputNama1" class="form-label">Nama</label>
-                                <input type="text" class="form-control" id="exampleInputNama1">
+                                <input type="text" class="form-control" id="exampleInputNama1"
+                                    value="{{$nasabah->nama_lengkap}}">
 
                             </div>
                             <div class="mb-1">
                                 <label for="exampleInputEmail1" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    value="{{$nasabah->name}}">
 
                             </div>
 
                             <div class="mb-1">
                                 <label for="exampleInputNoTelp1" class="form-label">Nomor Telepon</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" value="{{$nasabah->no_hp}}">
                             </div>
                             <div class="mb-1">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control">
+                                <input type="email" class="form-control" value="{{$nasabah->email}}">
                             </div>
                             <div class="mb-1">
                                 <label for="exampleInputAL" class="form-label">Alamat Lengkap</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" value="{{$nasabah->alamat}}">
                             </div>
-                            <div class="mb-1">
-                                <label for="exampleInputDesa" class="form-label">Desa</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                            <div class="mb-1">
-                                <label for="exampleInputKecamatan" class="form-label">Kecamatan</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputKota" class="form-label">Kota</label>
-                                <input type="text" class="form-control">
-                            </div>
-
 
                             <button type="submit" class="btn-full">Simpan</button>
                         </form>

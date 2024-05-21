@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\DB;
 class JemputanController extends Controller
 {
 
-    // public function __construct()
-    // {
-    //     $this->middleware('role:admin,nasabah,penjemput');
-    // }
-
     public function getAllView($id)
     {
         $jemput = DB::table('jemputan')
@@ -132,6 +127,7 @@ class JemputanController extends Controller
     {
         $jemput = Jemputan::where('id_jemputan', $id)->update([
             'konfirmasi' => $request->konfirmasi,
+            'id_penjemput' => $request->id_penjemput,
         ]);
 
         return response()->json(['message' => 'Status Konfirmasi Updated']);

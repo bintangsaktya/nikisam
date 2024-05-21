@@ -8,11 +8,6 @@ use Illuminate\Http\Request;
 
 class adminController extends Controller
 {
-    // public function __construct()
-    // {
-    //     $this->middleware('auth.role:admin');
-    // }
-
     public function profil($id)
     {
         $admin = Admin::all();

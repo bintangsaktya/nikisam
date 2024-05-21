@@ -295,7 +295,8 @@
             @foreach ($jemput as $jemp)
                 $('#Select<?php    echo $jemp->id_jemputan ?>').change(function () {
                     axios.put('/api/jemput/status/' + <?php    echo $jemp->id_jemputan ?>, {
-                        konfirmasi: $('#Select<?php    echo $jemp->id_jemputan ?>').val()
+                        konfirmasi: $('#Select<?php    echo $jemp->id_jemputan ?>').val(),
+                        id_penjemput: <?php    echo $jemp->id_jemputan ?>
                     }, {
                         headers: {
                             'Authorization': 'bearer ' + $token
